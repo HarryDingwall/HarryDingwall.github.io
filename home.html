@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="robots" content="noindex, nofollow">
+
+  <title>Harry Dingwall — Official Website</title>
+
+  <meta
+    name="description"
+    content="Harry Dingwall — British supermodel, actor, singer, songwriter, fashion designer, entrepreneur and filmmaker from Derbyshire."
+  >
+
+  <style>
+    :root {
+      --bg: #f4f4f1;
+      --text: #111111;
+      --muted: #777;
+      --line: #dcdcd8;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* NAV */
+
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 100;
+      padding: 22px 5vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(244, 244, 241, 0.82);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+    }
+
+    .logo {
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: -0.04em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    .nav-links a {
+      transition: opacity 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      opacity: 0.45;
+    }
+
+    /* HERO */
+
+    .hero {
+      min-height: 100vh;
+      padding: 150px 5vw 70px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .eyebrow {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--muted);
+    }
+
+    .hero h1 {
+      font-size: clamp(70px, 15vw, 220px);
+      line-height: 0.82;
+      letter-spacing: -0.075em;
+      font-weight: 700;
+      max-width: 1200px;
+      margin: 80px 0;
+    }
+
+    .hero-bottom {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 30px;
+      border-top: 1px solid var(--line);
+      padding-top: 20px;
+    }
+
+    .hero-stat span {
+      display: block;
+      font-size: 11px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 7px;
+    }
+
+    .hero-stat strong {
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    /* GENERAL */
+
+    section {
+      padding: 130px 5vw;
+    }
+
+    .section-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--muted);
+      margin-bottom: 50px;
+    }
+
+    /* ABOUT */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 8vw;
+    }
+
+    .about-title {
+      font-size: clamp(42px, 6vw, 85px);
+      line-height: 0.95;
+      letter-spacing: -0.055em;
+    }
+
+    .about-text {
+      font-size: clamp(22px, 2.6vw, 38px);
+      line-height: 1.15;
+      letter-spacing: -0.025em;
+      max-width: 850px;
+    }
+
+    .about-text p + p {
+      margin-top: 35px;
+    }
+
+    /* DISCIPLINES */
+
+    .disciplines {
+      border-top: 1px solid var(--line);
+    }
+
+    .discipline {
+      display: grid;
+      grid-template-columns: 70px 1fr;
+      padding: 28px 0;
+      border-bottom: 1px solid var(--line);
+      align-items: baseline;
+    }
+
+    .discipline-number {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .discipline-name {
+      font-size: clamp(32px, 5vw, 70px);
+      letter-spacing: -0.05em;
+      line-height: 1;
+    }
+
+    /* NUMBERS */
+
+    .numbers {
+      background: #111;
+      color: white;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+    }
+
+    .number {
+      border-top: 1px solid rgba(255,255,255,0.25);
+      padding-top: 20px;
+    }
+
+    .number strong {
+      display: block;
+      font-size: clamp(45px, 7vw, 100px);
+      letter-spacing: -0.06em;
+      line-height: 1;
+      margin-bottom: 15px;
+    }
+
+    .number span {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #aaa;
+    }
+
+    /* CAREER */
+
+    .career {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 8vw;
+    }
+
+    .career-intro {
+      font-size: clamp(35px, 5vw, 70px);
+      letter-spacing: -0.05em;
+      line-height: 0.95;
+    }
+
+    .timeline {
+      border-top: 1px solid var(--line);
+    }
+
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 30px;
+      padding: 35px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .timeline-year {
+      font-size: 12px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .timeline-content h3 {
+      font-size: 28px;
+      letter-spacing: -0.03em;
+      margin-bottom: 10px;
+    }
+
+    .timeline-content p {
+      max-width: 650px;
+      color: #555;
+      font-size: 16px;
+    }
+
+    /* FASHION */
+
+    .fashion {
+      background: #e9e9e5;
+    }
+
+    .fashion-title {
+      font-size: clamp(55px, 10vw, 145px);
+      letter-spacing: -0.075em;
+      line-height: 0.85;
+      margin-bottom: 80px;
+    }
+
+    .houses {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border-top: 1px solid #ccc;
+    }
+
+    .house {
+      padding: 22px 0;
+      border-bottom: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    /* FILM */
+
+    .film-list {
+      border-top: 1px solid var(--line);
+    }
+
+    .film {
+      display: grid;
+      grid-template-columns: 100px 1fr auto;
+      gap: 30px;
+      align-items: center;
+      padding: 35px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .film-year {
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .film-title {
+      font-size: clamp(25px, 4vw, 50px);
+      letter-spacing: -0.04em;
+    }
+
+    .film-role {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+    }
+
+    /* AWARDS */
+
+    .awards {
+      background: #111;
+      color: white;
+    }
+
+    .award-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+    }
+
+    .award-main {
+      font-size: clamp(50px, 8vw, 120px);
+      line-height: 0.88;
+      letter-spacing: -0.07em;
+    }
+
+    .award-list {
+      border-top: 1px solid #444;
+    }
+
+    .award {
+      padding: 25px 0;
+      border-bottom: 1px solid #444;
+    }
+
+    .award small {
+      display: block;
+      color: #999;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 8px;
+      font-size: 10px;
+    }
+
+    .award h3 {
+      font-size: 25px;
+      font-weight: 400;
+    }
+
+    /* BUSINESS */
+
+    .business-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8vw;
+      align-items: end;
+    }
+
+    .business-title {
+      font-size: clamp(50px, 8vw, 115px);
+      letter-spacing: -0.07em;
+      line-height: 0.88;
+    }
+
+    .business-text {
+      font-size: 22px;
+      max-width: 600px;
+      color: #444;
+    }
+
+    /* QUOTE */
+
+    .quote {
+      min-height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    blockquote {
+      max-width: 1000px;
+      font-size: clamp(38px, 6vw, 82px);
+      line-height: 0.98;
+      letter-spacing: -0.055em;
+    }
+
+    /* CONTACT */
+
+    .contact {
+      min-height: 80vh;
+    }
+
+    .contact h2 {
+      font-size: clamp(65px, 12vw, 170px);
+      line-height: 0.82;
+      letter-spacing: -0.075em;
+      margin-bottom: 80px;
+    }
+
+    .contact-details {
+      display: flex;
+      justify-content: space-between;
+      border-top: 1px solid var(--line);
+      padding-top: 20px;
+      font-size: 13px;
+    }
+
+    /* FOOTER */
+
+    footer {
+      padding: 30px 5vw;
+      display: flex;
+      justify-content: space-between;
+      border-top: 1px solid var(--line);
+      font-size: 11px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 800px) {
+
+      nav {
+        padding: 18px 5vw;
+      }
+
+      .nav-links {
+        gap: 14px;
+        font-size: 9px;
+      }
+
+      .hero {
+        padding-top: 120px;
+      }
+
+      .hero h1 {
+        font-size: 20vw;
+        margin: 60px 0;
+      }
+
+      .hero-bottom {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+      }
+
+      section {
+        padding: 90px 5vw;
+      }
+
+      .about-grid,
+      .career,
+      .business-grid,
+      .award-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+      }
+
+      .numbers {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .houses {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .film {
+        grid-template-columns: 60px 1fr;
+        gap: 15px;
+      }
+
+      .film-role {
+        grid-column: 2;
+      }
+
+      .timeline-item {
+        grid-template-columns: 80px 1fr;
+        gap: 15px;
+      }
+
+      .contact-details {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      footer {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+
+  <nav>
+    <a href="#" class="logo">HD</a>
+
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#fashion">Fashion</a>
+      <a href="#film">Film</a>
+      <a href="#business">Business</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+
+  <!-- HERO -->
+
+  <header class="hero">
+
+    <div class="eyebrow">
+      Derbyshire · England · United Kingdom
+    </div>
+
+    <h1>
+      Harry<br>
+      Dingwall
+    </h1>
+
+    <div class="hero-bottom">
+
+      <div class="hero-stat">
+        <span>Height</span>
+        <strong>6'2"</strong>
+      </div>
+
+      <div class="hero-stat">
+        <span>Fields</span>
+        <strong>Fashion · Film · Music</strong>
+      </div>
+
+      <div class="hero-stat">
+        <span>Businesses</span>
+        <strong>50+</strong>
+      </div>
+
+      <div class="hero-stat">
+        <span>Focus</span>
+        <strong>Creativity & Innovation</strong>
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <!-- ABOUT -->
+
+  <section id="about">
+
+    <div class="section-label">01 — About</div>
+
+    <div class="about-grid">
+
+      <div class="about-title">
+        A career built across culture.
+      </div>
+
+      <div class="about-text">
+
+        <p>
+          Harry Dingwall is a British creative, entrepreneur and
+          multi-disciplinary artist from Derbyshire whose work spans
+          fashion, cinema, music and business.
+        </p>
+
+        <p>
+          Beginning in fashion and modelling, Harry went on to build
+          a career across international fashion, film, music and
+          entrepreneurship.
+        </p>
+
+        <p>
+          His work combines creative direction, design, performance
+          and business with a belief in independence, ambition and
+          pushing established boundaries.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- DISCIPLINES -->
+
+  <section>
+
+    <div class="section-label">02 — Disciplines</div>
+
+    <div class="disciplines">
+
+      <div class="discipline">
+        <div class="discipline-number">01</div>
+        <div class="discipline-name">Supermodel</div>
+      </div>
+
+      <div class="discipline">
+        <div class="discipline-number">02</div>
+        <div class="discipline-name">Actor</div>
+      </div>
+
+      <div class="discipline">
+        <div class="discipline-number">03</div>
+        <div class="discipline-name">Singer</div>
+      </div>
+
+      <div class="discipline">
+        <div class="discipline-number">04</div>
+        <div class="discipline-name">Songwriter</div>
+      </div>
+
+      <div class="discipline">
+        <div class="discipline-number">05</div>
+        <div class="discipline-name">Fashion Designer</div>
+      </div>
+
+      <div class="discipline">
+        <div class="discipline-number">06</div>
+        <div class="discipline-name">Entrepreneur</div>
+      </div>
+
+      <div class="discipline">
+        <div class="discipline-number">07</div>
+        <div class="discipline-name">Filmmaker</div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- NUMBERS -->
+
+  <section class="numbers">
+
+    <div class="number">
+      <strong>50+</strong>
+      <span>Successful businesses</span>
+    </div>
+
+    <div class="number">
+      <strong>£5B+</strong>
+      <span>Stated net worth</span>
+    </div>
+
+    <div class="number">
+      <strong>6'2"</strong>
+      <span>Height</span>
+    </div>
+
+    <div class="number">
+      <strong>∞</strong>
+      <span>Creative ambition</span>
+    </div>
+
+  </section>
+
+
+  <!-- CAREER -->
+
+  <section>
+
+    <div class="section-label">03 — Career</div>
+
+    <div class="career">
+
+      <div class="career-intro">
+        From Derbyshire to international fashion, film and business.
+      </div>
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-year">Origins</div>
+
+          <div class="timeline-content">
+            <h3>Derbyshire</h3>
+            <p>
+              Harry's story begins in Derbyshire, England, before
+              developing into an international career spanning several
+              creative industries.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-year">Fashion</div>
+
+          <div class="timeline-content">
+            <h3>Paris</h3>
+            <p>
+              Harry modelled in Paris across major fashion houses,
+              establishing a career at the intersection of fashion,
+              image and creative direction.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-year">Design</div>
+
+          <div class="timeline-content">
+            <h3>Clothing & Design</h3>
+            <p>
+              Moving beyond modelling, Harry developed clothing
+              brands and built a career as a fashion designer and
+              producer.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-year">Cinema</div>
+
+          <div class="timeline-content">
+            <h3>Film</h3>
+            <p>
+              Harry expanded into acting and filmmaking, combining
+              performance with creative production.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-year">Music</div>
+
+          <div class="timeline-content">
+            <h3>Music</h3>
+            <p>
+              As a singer and songwriter, Harry developed another
+              creative outlet through performance and original music.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-year">Business</div>
+
+          <div class="timeline-content">
+            <h3>Entrepreneurship</h3>
+            <p>
+              Harry went on to build and operate more than 50
+              successful businesses across multiple industries.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FASHION -->
+
+  <section id="fashion" class="fashion">
+
+    <div class="section-label">04 — Fashion</div>
+
+    <div class="fashion-title">
+      Paris.<br>
+      Fashion.<br>
+      Design.
+    </div>
+
+    <div class="houses">
+
+      <div class="house">Chanel</div>
+      <div class="house">Dior</div>
+      <div class="house">Louis Vuitton</div>
+      <div class="house">Balenciaga</div>
+
+      <div class="house">Saint Laurent</div>
+      <div class="house">Givenchy</div>
+      <div class="house">Hermès</div>
+      <div class="house">Balmain</div>
+
+      <div class="house">Celine</div>
+      <div class="house">Chloé</div>
+      <div class="house">Loewe</div>
+      <div class="house">Valentino</div>
+
+      <div class="house">Miu Miu</div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FILM -->
+
+  <section id="film">
+
+    <div class="section-label">05 — Film</div>
+
+    <div class="film-list">
+
+      <div class="film">
+        <div class="film-year">2012</div>
+
+        <div class="film-title">
+          Django Unchained
+        </div>
+
+        <div class="film-role">
+          Acting
+        </div>
+      </div>
+
+      <div class="film">
+        <div class="film-year">2015</div>
+
+        <div class="film-title">
+          The Hateful Eight
+        </div>
+
+        <div class="film-role">
+          Acting
+        </div>
+      </div>
+
+      <div class="film">
+        <div class="film-year">2019</div>
+
+        <div class="film-title">
+          Once Upon a Time... in Hollywood
+        </div>
+
+        <div class="film-role">
+          Acting
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- AWARDS -->
+
+  <section class="awards">
+
+    <div class="section-label">06 — Recognition</div>
+
+    <div class="award-grid">
+
+      <div class="award-main">
+        Awards,<br>
+        music &<br>
+        cinema.
+      </div>
+
+      <div class="award-list">
+
+        <div class="award">
+          <small>Academy Awards</small>
+          <h3>Best Supporting Actor</h3>
+        </div>
+
+        <div class="award">
+          <small>Eurovision</small>
+          <h3>Winner — England</h3>
+        </div>
+
+        <div class="award">
+          <small>Fashion</small>
+          <h3>International modelling & design</h3>
+        </div>
+
+        <div class="award">
+          <small>Business</small>
+          <h3>50+ successful ventures</h3>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- BUSINESS -->
+
+  <section id="business">
+
+    <div class="section-label">07 — Business</div>
+
+    <div class="business-grid">
+
+      <div class="business-title">
+        Build.<br>
+        Create.<br>
+        Scale.
+      </div>
+
+      <div class="business-text">
+
+        <p>
+          Entrepreneurship has become a central part of Harry's
+          career, with more than 50 successful businesses developed
+          across different sectors.
+        </p>
+
+        <br>
+
+        <p>
+          His approach combines creative thinking with commercial
+          strategy, allowing ideas originating in fashion, media
+          and culture to become scalable businesses.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FEMINISM -->
+
+  <section>
+
+    <div class="section-label">08 — Values</div>
+
+    <div class="about-grid">
+
+      <div class="about-title">
+        Creativity with conviction.
+      </div>
+
+      <div class="about-text">
+
+        <p>
+          Harry is an outspoken feminist and believes creativity
+          should exist alongside equality, independence and the
+          freedom to challenge established expectations.
+        </p>
+
+        <p>
+          Across fashion, film, music and business, the emphasis
+          remains the same: create work with purpose and build
+          something that lasts.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- QUOTE -->
+
+  <section class="quote">
+
+    <blockquote>
+      “Don't wait for permission to create the life you want.”
+    </blockquote>
+
+  </section>
+
+
+  <!-- CONTACT -->
+
+  <section id="contact" class="contact">
+
+    <div class="section-label">09 — Contact</div>
+
+    <h2>
+      Let's make<br>
+      something.
+    </h2>
+
+    <div class="contact-details">
+
+      <span>Harry Dingwall</span>
+
+      <span>
+        Derbyshire · England
+      </span>
+
+      <span>
+        © 2026 Harry Dingwall
+      </span>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <span>HD</span>
+
+    <span>
+      Supermodel · Actor · Musician · Designer · Entrepreneur
+    </span>
+
+    <span>
+      2026
+    </span>
+
+  </footer>
+
+</body>
+</html>
